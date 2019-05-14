@@ -14,6 +14,8 @@ public class FindNumberOfSmallerElementsToTheRight {
     /**
      * This implementation is based on the quicksort partitioning algorithm.
      * However, still O(^2). Thus naive.
+     *
+     * TODO: study more efficient algorithms & data structures.
      */
     public int[] naive(int[] input) {
         int[] result = new int[input.length];
