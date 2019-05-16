@@ -1,7 +1,6 @@
 package com.buggymind.arrays;
 
 import com.buggymind.type.Bounds;
-import sun.tools.jconsole.AboutDialog;
 
 /**
  * Given an array of numbers, naive the maximum sum of any contiguous subarray

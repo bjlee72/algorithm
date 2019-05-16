@@ -8,7 +8,7 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
 /**
- * Given a list of words, find all pairs of unique indices such that the
+ * Given a list of words, find all pairs of 'unique indices' such that the
  * concatenation of the two words is a palindrome.
  */
 public class GeneratePalindromePairs {
@@ -34,6 +34,9 @@ public class GeneratePalindromePairs {
         return true;
     }
 
+    /*
+     * Let's say the words.length == n. This algorithm works in O(n^2).
+     */
     List<Pair> naive(final String[] words) {
         List<Pair> result = new LinkedList<>();
 
@@ -53,7 +56,6 @@ public class GeneratePalindromePairs {
                 if (isPalindrome(l + r)) {
                     result.add(new Pair(i, j));
                 }
-
             }
         }
 
