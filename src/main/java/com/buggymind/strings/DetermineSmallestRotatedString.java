@@ -30,6 +30,7 @@ class DetermineSmallestRotatedString {
 
         while (true) {
             List<String> candidates = new LinkedList<>();
+
             for (int i = 0; i < k; ++i) {
                 char current = min.charAt(i);
                 String currentMoved = min.substring(0, i) + min.substring(i + 1) + current;
