@@ -26,4 +26,20 @@ public class AddTwoLinkedListsTest {
 
         assertThat(Node.equals(result, expect), is(true));
     }
+
+    @Test
+    public void addWithOneNullInput() {
+        Node n1 = new Node(9).setNext(new Node(9));
+
+        Node result = adder.add(n1, null);
+
+        assertThat(Node.equals(result, n1), is(true));
+    }
+
+    @Test
+    public void addNulls() {
+        Node result = adder.add(null, null);
+
+        assertThat(Node.equals(result, new Node(0)), is(true));
+    }
 }
