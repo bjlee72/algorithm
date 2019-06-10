@@ -49,6 +49,5 @@ public class FindIntersectingNodesTest {
         Node intersect = finder.find(list1, list2);
 
         assertThat(intersect, nullValue());
-
     }
 }
