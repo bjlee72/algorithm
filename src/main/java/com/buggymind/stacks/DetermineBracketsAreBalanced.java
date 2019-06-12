@@ -2,9 +2,6 @@ package com.buggymind.stacks;
 
 import java.util.Stack;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-
 /**
  * Given a string of round, curly, and square opening and closing brackets,
  * return whether the brackets are balanced (well-formed).
