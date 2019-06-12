@@ -24,4 +24,13 @@ public class DetermineBracketsAreBalancedTest {
     public void isMalformed() {
         assertThat(decider.isWellFormed("([][]({})"), is(false));
     }
+
+    @Test
+    public void isMalformed2() {
+        assertThat(decider.isWellFormed("][{}]["), is(false));
+    }
+    @Test
+    public void isMalformed3() {
+        assertThat(decider.isWellFormed("[[[(((]]])))"), is(false));
+    }
 }
