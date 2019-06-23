@@ -20,6 +20,13 @@ public class MaximumOfKLengthSubarrays {
 
     /**
      * The approach taken here is, "update maxIndex only when it's necessary".
+     *
+     * You can optimize this with the following 2 approaches combined:
+     *
+     *   1. Keep the tracking information about whether you can remove the number
+     *      out of the queue. The original index of the element would be helpful.
+     *   2. Remove the smaller elements out of the queue because they are not
+     *      necessary to track.
      */
     List<Integer> compute(final int[] input, final int k) {
         if (k >= input.length) {
